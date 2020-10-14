@@ -1,0 +1,1 @@
+alert('ADVERTENCIA: \nMirar este sitio puede darte ganas de viajar');

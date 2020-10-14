@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Viajes por el mundo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/23858ab0b5.js" crossorigin="anonymous"></script>
+    <link rel="STYLESHEET" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class="fas fa-globe-americas fa-3x"></i></a>
+        <h1>Viajes por el mundo</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="consejos.html" class="navitem">Consejos</a></li>
+                <li><a href="faq.html" class="navitem">FAQ</a></li>
+                <li><a href="encuesta.html" class="navitem">Encuesta</a></li>
+                <li><a href="contacto.html" class="navitem">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Encuesta</h2>
+        <form id="formulario" action="show_data.html">
+           <label>Nombre: <input type="text" name="nombre" id="nombre" value="" placeholder="Ingrese su nombre aquí..." required></label><br><br>
+           <label>Apellido: <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aquí..." required></label><br><br>
+           <label>E-mail: <input type="email" name="email" id="email" placeholder="Ingrese su e-mail aquí..." required></label><br><br>
+           <label>Fecha de nacimiento (dd/mm/yyyy): <input type="date" name="fechadenac" required></label><br><br>
+           <fieldset><legend>Género:</legend> 
+               <label>Femenino<input type="radio" value="F" name="genero"></label><br>
+               <label>Masculino<input type="radio" value="M" name="genero"></label><br>
+               <label>Otro<input type="radio" value="Otro" name="genero"></label><br>
+               <label>Prefiero no decirlo<input type="radio" value="nc" name="genero"></label>
+            </fieldset><br> 
+            <fieldset><legend>Con quién preferís viajar?</legend>
+                <select name="compañia" required>
+                <option value="none" selected disabled>Compañía favorita</option>
+                <option value="solo">Solo</option>
+                <option value="pareja">Con mi pareja</option>
+                <option value="familia">Con mi familia</option>
+                <option value="amigos">Con amigos</option>
+                <option value="desconocidos">Con desconocidos</option>
+                </select>
+            </fieldset><br> 
+            <fieldset><legend>Cuál es tu tipo de viaje favorito? (podés elegir más de una)</legend> 
+                <input type="checkbox" value="ciudades" name="viaje-favorito">Cuidades<br>
+                <input type="checkbox" value="playa" name="viaje-favorito">Playa<br>
+                <input type="checkbox" value="montaña" name="viaje-favorito">Montaña<br>
+                <input type="checkbox" value="aventura" name="viaje-favorito">Aventura<br>
+                <input type="checkbox" value="tranquilidad" name="viaje-favorito">Tranquilidad<br>
+                <input type="checkbox" value="cultura" name="viaje-favorito">Cultura<br>
+                <input type="checkbox" value="otro" name="viaje-favorito">Otro<br>
+            </fieldset>
+            <p>Alguna sugerencia?<br> <br> 
+                <textarea placeholder="Ingresa tu comentario aquí..."></textarea><br>
+            </p>
+             <input type="submit" value="Enviar" class="button" id="button">
+        </form>
+    </main>
+    <footer>
+        <div id="foot">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x smicon"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x smicon"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x smicon"></i></a>
+        </div>
+        <p id="copyright">Copyright 2020 © Todos los derechos reservados</p>
+    </footer>
+    <script src="js/encuesta.js"></script>
+</body>
+</html>
