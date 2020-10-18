@@ -176,6 +176,17 @@ ul {
     justify-content: space-evenly;
 }
 
+#topconsejos {
+    display: grid;
+    grid-template-columns: 59% 39%;
+    column-gap: 2%;   
+}
+
+#trainpic {
+    width: 100%;
+    margin: auto;
+}
+
 #faqs {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -295,6 +306,15 @@ aside a:hover {
     aside a:active {
         text-decoration: underline;
         color: rgb(233, 117, 75);
+    }
+
+    #topconsejos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #trainpic {
+        max-width: 50%;
     }
 }
 
