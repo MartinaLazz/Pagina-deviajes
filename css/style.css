@@ -88,23 +88,6 @@ figcaption {
     text-align: center;
 }
 
-form {
-    width: 70%;
-    margin: 0 15%;
-    padding: 2%;
-    background-color: rgba(9, 65, 52, 0.7);
-    border-radius: 1%;
-    color: rgb(197, 194, 194);
-    font-weight: 500;
-    box-shadow: 10px 10px 5px 0px rgba(40, 59, 47, 0.7);
-}
-
-textarea {
-    width: 100%;
-    height: 10%;
-    resize: none;
-}
-
 table {
     border: solid rgb(235, 99, 49);
     border-radius: 1%;
@@ -124,12 +107,19 @@ aside {
     border-radius: 1%;
 }
 
+textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
 ul {
     list-style-type: none;
 }
 
 .button {
     background-color: rgb(37, 36, 64);
+    border-color: rgb(37, 36, 64);
     color:rgb(245, 245, 220);
     font-weight: 900;
     font-size: 1.5rem;
@@ -167,6 +157,43 @@ ul {
 
 .location, .contacto {
     text-align: center;
+}
+
+.consejoslabel {
+    font-size: 1.8rem;
+}
+
+.opinion {
+    display: inline;
+}
+
+.laugh {
+    color: rgb(43, 136, 0);
+}
+
+.smile {
+    color: rgb(115, 219, 67);
+}
+
+.meh {
+    color: rgb(226, 223, 13);
+}
+
+.frown {
+    color: rgb(255, 166, 0);
+}
+
+.angry {
+    color: rgb(252, 2, 2);
+}
+
+.public {
+    margin: 2%;
+}
+
+.opiniontxt {
+    margin: 5%;
+    font-style: italic;
 }
 
 #nav-list {
@@ -235,6 +262,36 @@ ul {
     justify-items: center;
 }
 
+#formulario {
+    width: 70%;
+    margin: 0 15%;
+    padding: 2%;
+    background-color: rgba(9, 65, 52, 0.7);
+    border-radius: 1%;
+    color: rgb(197, 194, 194);
+    font-weight: 500;
+    box-shadow: 10px 10px 5px 0px rgba(40, 59, 47, 0.7);
+}
+
+#consejosusuarios {
+    display: flex;
+    flex-direction: column;
+}
+
+#userconsejos {
+    width: 70%;
+}
+
+#buttonconsejos {
+    width: 10rem;
+    background-color: rgb(235, 99, 49);
+    border-radius: 10%;
+    margin: 0;
+    text-align: center;
+    box-shadow: 2px 2px 5px 0px rgba(40, 59, 47, 0.7);
+    border-color: rgb(235, 99, 49); 
+}
+
 @keyframes beat {
     0% {transform: scale(1);
     }
@@ -268,7 +325,7 @@ aside a:hover {
 }
 
 @media only screen and (max-width:1000px) {
-    form {
+    #formulario {
         width: 80%;
         margin: 10%;
     }
@@ -372,7 +429,7 @@ aside a:hover {
         font-size: 3.5rem;
     }
     
-    form {
+    #formulario {
         width: 100%;
         margin: 0;
     }
