@@ -73,11 +73,11 @@
             <p>En esta sección tenemos ganas de escucharlos a ustedes y de permitir que compartan sus experiencias!</p>
             
             <form id="consejosusuarios">
-                <label class="consejoslabel">Nombre: <input type="text" name="nombreconsejos" id="nombreconsejos" value="" v-model="nombre" placeholder="Ingrese su nombre aquí" required></label><br>
+                <label>Nombre: <input type="text" name="nombreconsejos" id="nombreconsejos" value="" v-model="nombre" placeholder="Ingrese su nombre aquí" required></label><br>
                 <div class="opinion">
-                    <legend class="consejoslabel">¿Viajaste con "Viajes por el mundo"?</legend> 
-                    <label class="consejoslabel">No<input type="radio" name="viaje" value="No" v-model="seleccionado" required></label>
-                    <label class="consejoslabel">Si<input type="radio" name="viaje" value="Si" v-model="seleccionado" required></label><br><br>
+                    <legend>¿Viajaste con "Viajes por el mundo"?</legend> 
+                    <label>No<input type="radio" name="viaje" value="No" v-model="seleccionado" required></label>
+                    <label>Si<input type="radio" name="viaje" value="Si" v-model="seleccionado" required></label><br><br>
                     
                     <div v-html="contenidohtml"></div> 
                 </div>
